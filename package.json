@@ -4,8 +4,11 @@
 	"private": true,
 	"dependencies": {
 		"antd": "^3.16.3",
+		"express": "^4.16.4",
+		"express-favicon": "^2.0.1",
 		"gsap": "^2.0.2",
 		"lodash": "^4.17.11",
+		"path": "^0.12.7",
 		"react": "^16.6.3",
 		"react-debounce-input": "^3.2.0",
 		"react-dom": "^16.6.3",
@@ -17,7 +20,7 @@
 		"redux-thunk": "^2.3.0"
 	},
 	"scripts": {
-		"start": "react-scripts start",
+		"start": "node server.js",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
