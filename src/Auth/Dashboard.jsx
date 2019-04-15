@@ -8,7 +8,7 @@ export default class Dashboard extends React.Component {
 		users: []
 	};
 	componentDidMount() {
-		fetch(`http://localhost:8000/users`, {
+		fetch(`https://api-ordertogether.herokuapp.com/users`, {
 			method: 'GET',
 			headers: {
 				'Content-Type': 'application/json'

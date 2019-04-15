@@ -28,7 +28,7 @@ class Auth extends React.PureComponent<Props, State> {
 
 		this.props.form.validateFields((err, values) => {
 			if (!err) {
-				fetch(`http://localhost:8000/auth/signin`, {
+				fetch(`https://api-ordertogether.herokuapp.com/auth/signin`, {
 					method: 'POST',
 					body: JSON.stringify(values),
 					headers: {

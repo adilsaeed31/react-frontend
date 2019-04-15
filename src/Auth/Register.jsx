@@ -57,7 +57,7 @@ class Register extends React.PureComponent<Props, State> {
 		this.props.form.validateFields((err, values) => {
 			console.log(err, 'err');
 			if (!err) {
-				fetch(`http://localhost:8000/auth/signup`, {
+				fetch(`https://api-ordertogether.herokuapp.com/auth/signup`, {
 					method: 'POST',
 					body: JSON.stringify(values),
 					headers: {
